@@ -39,7 +39,8 @@ function Todo() {
 // let listaMostrar = tareas.map((e,i)=> <button key={i} onClick={()=>eliminaTarea(i)}><TareasComp  elemento={e}  />  </button>)
   // let listaMostrar = tareas.map((e,i) => <button className='alert alert-warning' key={i}  onClick={()=>eliminaTarea(i)} >{e}</button>)
   // let listaMostrar = tareas.map((e,i)=> <button key={i} onClick={()=>eliminaTarea(i)}><TareasComp  elemento={e}  /> )
-  
+  let listaMostrar=tareas.map((e,i)=> <Hola work={eliminaTarea} texto={e} /> );
+
       return (
     <div className="p-5">
       <h1>Todo-list</h1>

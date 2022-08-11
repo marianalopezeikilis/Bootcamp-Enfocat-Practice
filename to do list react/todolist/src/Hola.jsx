@@ -1,9 +1,11 @@
 import React from 'react'
 
-function Hola(props) {
+function Hola(work, texto) {
   return (
-    <div>Hola {props.elemento} </div>
+    //NO OLVIDAR PASAR PARAMETROS
+    <div  onClick={()=>work(texto)}> {texto} </div>
   )
 }
 
 export default Hola
+
