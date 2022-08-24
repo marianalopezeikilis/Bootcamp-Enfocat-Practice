@@ -27,7 +27,8 @@ app.get('/api/todascitas', function (req, res) {
 
  app.get('/api/citasrandom', function (req, res) {
     let numcita = Math.floor(Math.random()*4);
-    let cita_mostrada = CITAS.filter((e,i)=> i==numcita);
+   let cita_mostrada = CITAS[numcita];
+    // let cita_mostrada = CITAS.filter((e,i)=> i==numcita);
     res.json(cita_mostrada);
 
     
